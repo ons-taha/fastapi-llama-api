@@ -8,6 +8,9 @@ import os
 
 
 app = FastAPI()
+@app.get("/")
+def home():
+    return {"message": "Welcome to the Qi Card AI Chatbot API. Use POST /ask to chat."}
 
 
 SCOUT_MODEL_ID = "meta-llama/llama-4-scout"
