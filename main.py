@@ -13,9 +13,7 @@ app = FastAPI()
 SCOUT_MODEL_ID = "meta-llama/llama-4-scout"
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
-
-API_KEY = os.getenv("API_KEY")
-
+API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 HEADERS = {
     "Authorization": f"Bearer {API_KEY}",
